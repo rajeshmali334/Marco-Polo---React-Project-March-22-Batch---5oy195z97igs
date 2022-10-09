@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/App.css';
 const App = () => {
+  const [text, setText]=useState("Marco");
+  const [buttentext, setButtenText]=useState("Polo");
   
   return (
     <div id="main">
-
+        <h1 id="marco-polo">{text}</h1>
+        <button  id="marco-polo-toggler" >{buttentext}</button>
     </div>
   )
 }
